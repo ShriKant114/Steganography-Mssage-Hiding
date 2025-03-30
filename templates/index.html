@@ -7,30 +7,44 @@
     <title>Steganography App</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @media screen and (max-width: 768px) {
-            footer {
-                margin-bottom: 11%;
-            }
+       
+    @media screen and (max-width: 768px) {
+        footer {
+            margin-bottom: 11%;
         }
 
-        .password-container {
-            position: relative;
+        input[type="text"],
+        input[type="password"],
+        input[type="file"] {
+            padding: 8px;
+            font-size: 14px;
+            max-width: 100%;
+        }
+
+        button {
             width: 100%;
         }
+    }
 
-        .eye-icon {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            color: #555;
-        }
+    .password-container {
+        position: relative;
+        width: 100%;
+    }
 
-        .eye-icon:hover {
-            color: #000;
-        }
-    </style>
+    .eye-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #555;
+    }
+
+    .eye-icon:hover {
+        color: #000;
+    }
+</style>
+    
 </head>
 
 <body class="bg-gray-50 min-h-screen flex flex-col" style="margin-left: 5%; margin-right: 5%;">

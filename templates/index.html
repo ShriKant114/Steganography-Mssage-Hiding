@@ -8,41 +8,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
        
-    @media screen and (max-width: 768px) {
-        footer {
-            margin-bottom: 11%;
+   @media screen and (max-width: 768px) {
+            footer {
+                margin-bottom: 11%;
+            }
         }
 
-        input[type="text"],
-        input[type="password"],
-        input[type="file"] {
-            padding: 8px;
-            font-size: 14px;
-            max-width: 100%;
-        }
-
-        button {
+        .password-container {
+            position: relative;
             width: 100%;
         }
-    }
 
-    .password-container {
-        position: relative;
-        width: 100%;
-    }
+        .eye-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #555;
+        }
 
-    .eye-icon {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        color: #555;
-    }
-
-    .eye-icon:hover {
-        color: #000;
-    }
+        .eye-icon:hover {
+            color: #000;
+        }
 </style>
     
 </head>
@@ -82,14 +70,14 @@
 
                     <form action="/hide" method="POST" enctype="multipart/form-data" class="space-y-4">
                         <p>🖼️ Upload Image To Protect</p>
-                        <input type="file" name="image" class="border p-2 w-full" required>
+                        <input type="file" name="image" class="border p-2 w-3/5" required>
 
                         <p>💬 Enter a Message to Hide in Image</p>
-                        <input type="text" name="message" placeholder="Enter message" class="border p-1 w-full" required>
+                        <input type="text" name="message" placeholder="Enter message" class="border p-2 w-3/5" required>
 
                         <p>🔐 Enter a Password to Hide Message</p>
                         <div class="password-container">
-                            <input type="password" id="encrypt-password" name="password" placeholder="Enter password" class="border p-2 w-full" required>
+                            <input type="password" id="encrypt-password" name="password" placeholder="Enter password" class="border p-2 w-3/5" required>
                             <i class="eye-icon bi bi-eye-slash" onclick="togglePassword('encrypt-password', this)"></i>
                         </div>
 
@@ -115,11 +103,11 @@
 
                     <form action="/reveal" method="POST" enctype="multipart/form-data" class="space-y-4">
                         <p>🖼️ Upload Encrypted Image</p>
-                        <input type="file" name="image" class="border p-2 w-full" required>
+                        <input type="file" name="image" class="border p-2 w-3/5" required>
 
                         <p>🔑 Enter Password to Decrypt</p>
                         <div class="password-container">
-                            <input type="password" id="decrypt-password" name="password" placeholder="Enter password" class="border p-2 w-full" required>
+                            <input type="password" id="decrypt-password" name="password" placeholder="Enter password" class="border p-2 w-3/5" required>
                             <i class="eye-icon bi bi-eye-slash" onclick="togglePassword('decrypt-password', this)"></i>
                         </div>
 

@@ -10,6 +10,7 @@ app.secret_key = 'your_secret_key'  # Flash message
 def index():
     return render_template('index.html', hidden_image=False)
 
+@app.route('/about')
 def about():
     return render_template('about.html')
 

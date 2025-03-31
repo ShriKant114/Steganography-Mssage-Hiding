@@ -33,7 +33,7 @@ The **`hide-message-in-image`** project is a web-based steganography application
 #### ⚙️ **Tech Stack**
 - **Backend:** Flask (Python)  
 - **Frontend:** HTML, CSS, JavaScript  
-- **Steganography Library:** Python Imaging Library (Pillow)  
+- **Steganography Library:** stegano 
 
 ---
 

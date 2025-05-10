@@ -3,7 +3,7 @@
 ---
 
 #### 💡 **Overview**
-The **`hide-message-in-image`** project is a web-based steganography application that allows you to hide and extract secret messages in images with password protection. The purpose of this app is to enhance data security by enabling the concealment and secure sharing of sensitive information.
+The **`Steganography-Mssage-Hiding`** project is a web-based steganography application that allows you to hide and extract secret messages in images with password protection. The purpose of this app is to enhance data security by enabling the concealment and secure sharing of sensitive information.
 
 ---
 
@@ -40,7 +40,7 @@ The **`hide-message-in-image`** project is a web-based steganography application
 #### 🛠️ **Installation**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ShriKant114/hide-message-in-image/
+   git clone https://github.com/ShriKant114/Steganography-Mssage-Hiding/
    ```
 2. Install dependencies:
    ```bash
